@@ -1,7 +1,7 @@
 :root {
   --headless-button-border-radius: 4px;
   --headless-button-padding: 8px 16px;
-  --headless-button-font-size: 16px;
+  --headless-button-font-size: var(--headless-font-family);
   --headless-button-border-size: 2px;
   --headless-button-disabled-opacity: 0.25;
   --headless-button-font-family: var(--headless-font-family);

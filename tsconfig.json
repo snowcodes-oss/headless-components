@@ -8,8 +8,11 @@
     "strict": true,
     "noImplicitOverride": true,
     "paths": {
-      "headless-components": [
-        "dist/headless-components"
+      "@snowcodes/headless-components": [
+        "./dist/@snowcodes/headless-components"
+      ],
+      "@snowcodes/headless-components/*": [
+        "./dist/@snowcodes/headless-components/*"
       ]
     },
     "noPropertyAccessFromIndexSignature": true,
@@ -27,7 +30,7 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

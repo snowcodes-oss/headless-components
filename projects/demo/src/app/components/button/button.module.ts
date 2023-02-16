@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { HeadlessButtonModule } from "dist/@snowcodes/headless-components";
+import { HeadlessButtonModule } from "@snowcodes/headless-components/button";
 
 import { ButtonComponent } from "./button.component";
 

@@ -1,4 +1,5 @@
-@import "dist/@snowcodes/headless-components/assets";
+@import "dist/@snowcodes/headless-components/assets/bootstrap";
+@import "dist/@snowcodes/headless-components/assets/components";
 
 :root {
   --headless-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -11,4 +12,9 @@ body {
   margin: 0;
   font-family: var(--headless-font-family);
   font-size: var(--headless-font-size);
+}
+
+.custom-button-color {
+  background-color: red;
+  border-color: red;
 }

@@ -1,0 +1,22 @@
+.navigation-bar {
+  background-color: var(--headless-primary);
+  color: var(--headless-white);
+
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  .brand {
+    font-size: x-large;
+    font-weight: 600;
+  }
+
+  a {
+    color: var(--headless-white);
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+}

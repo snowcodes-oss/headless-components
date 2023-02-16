@@ -1,0 +1,26 @@
+:host {
+  ::ng-deep .my-custom-color {
+    background-color: red;
+    border-color: red;
+  }
+}
+
+.example-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-direction: column;
+
+    &.row {
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+/**
+ * ----------------------------------------
+ * @snowcodes/headless-components
+ * Theming SCSS - Version 0.0.2
+ * Author: Alexandre RUIZ
+ * Git: https://github.com/snowcodes-oss/headless-components
+ * Deployed: https://www.npmjs.com/package/@snowcodes/headless-components
+ * ----------------------------------------
+ */
+
+/**
+ * Default theming
+ */
+@import "./palette";
+@import "./font";
+
+/**
+ * Components
+ */
+@import "./components/button";

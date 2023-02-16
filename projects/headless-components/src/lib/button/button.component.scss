@@ -1,0 +1,74 @@
+@mixin headless-button-apply-theme($color, $on-color) {
+  color: $on-color;
+  background-color: $color;
+  border-color: $color;
+
+  &.outlined {
+    color: $color;
+    background-color: transparent;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $color;
+    color: $on-color;
+    filter: brightness(0.95);
+
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  &:active {
+    filter: brightness(0.75);
+  }
+}
+
+.headless-button {
+  border-radius: var(--headless-button-border-radius);
+  padding: var(--headless-button-padding);
+  font-size: var(--headless-button-font-size);
+  border: var(--headless-button-border-size) solid;
+  font-family: var(--headless-button-font-family);
+
+  cursor: pointer;
+
+  &:disabled {
+    opacity: var(--headless-button-disabled-opacity);
+  }
+
+  &.primary {
+    @include headless-button-apply-theme(
+      var(--headless-primary),
+      var(--headless-on-primary)
+    );
+  }
+
+  &.secondary {
+    @include headless-button-apply-theme(
+      var(--headless-secondary),
+      var(--headless-on-secondary)
+    );
+  }
+
+  &.warn {
+    @include headless-button-apply-theme(
+      var(--headless-warn),
+      var(--headless-on-warn)
+    );
+  }
+
+  &.error {
+    @include headless-button-apply-theme(
+      var(--headless-error),
+      var(--headless-on-error)
+    );
+  }
+
+  &.success {
+    @include headless-button-apply-theme(
+      var(--headless-success),
+      var(--headless-on-success)
+    );
+  }
+}

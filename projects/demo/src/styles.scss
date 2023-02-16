@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import "dist/@snowcodes/headless-components/assets";
+
+:root {
+  --headless-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--headless-font-family);
+  font-size: var(--headless-font-size);
+}

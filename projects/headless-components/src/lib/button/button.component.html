@@ -1,0 +1,4 @@
+<button [ngClass]="!!override ? override : ['headless-button', appearance, color].join(' ')" [attr.type]="type"
+  [attr.disabled]="disabled" [ariaDisabled]="disabled">
+  <ng-content></ng-content>
+</button>

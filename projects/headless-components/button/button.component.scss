@@ -12,15 +12,6 @@
   &:hover {
     background-color: $color;
     color: $on-color;
-    filter: brightness(0.95);
-
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-  }
-
-  &:active {
-    filter: brightness(0.75);
   }
 }
 
@@ -30,11 +21,22 @@
   font-size: var(--headless-button-font-size);
   border: var(--headless-button-border-size) solid;
   font-family: var(--headless-button-font-family);
-
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
   cursor: pointer;
 
   &:disabled {
     opacity: var(--headless-button-disabled-opacity);
+  }
+
+  &:focus,
+  &:hover {
+    filter: brightness(0.95);
+  }
+
+  &:active {
+    filter: brightness(0.75);
   }
 
   &.primary {

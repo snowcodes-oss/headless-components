@@ -1,10 +1,12 @@
 :host {
   display: flex;
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
 }
 
 .side-menu {
-  width: 100%;
-  max-width: 480px;
+  flex: 1;
 
   ul {
     label {
@@ -16,5 +18,5 @@
 }
 
 .container {
-  flex: 1 1 auto;
+  flex: 2;
 }
